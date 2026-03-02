@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+
+            max-width: 1160px;
+            margin: 50px auto;
+
+
+        }
+        #post-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .post-card{
+            border: 1px solid #ddd;
+            padding: 10px;
+            
+            border-radius: 10px;
+            box-shadow: 1px 1px 7px gray;
+            height: 90%;
+        }
+
+        .post-card p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!--  -->
+
+
+    <h1> json</h1>
+    <button onclick="change()"> change</button>
+    <button onclick="loadPost()"> load</button>
+    
+    <h1>all post</h1>
+    <div id="post-container">
+        
+    </div>
+    <script src="./post.js"></script>
+    <script src="./fetch.js"></script>
+</body>
+</html>
